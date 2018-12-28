@@ -20,7 +20,7 @@ let plugins = [{
         profile: {
             url: {
                 $filter: 'env',
-                local: 'http://192.168.1.66/profiles',
+                test: 'http://192.168.1.66/profiles',
                 $default: 'https://www.willowtreeapps.com/api/v1.0/profiles',
             },
         },
