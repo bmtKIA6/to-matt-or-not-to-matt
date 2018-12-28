@@ -1,0 +1,55 @@
+* To Matt Or Not To Matt
+
+This API creates a game layer a top of the following data set: [[https://www.willowtreeapps.com/api/v1.0/profiles][WillowTree Profiles]]
+
+- The application is written with [[https://hapijs.com/][HapiJS framework]]
+- The default database is SQLite
+- The ESLint rules are an extension of Airbnb javascript rules
+- There is no authentication. However, HTTP Basic Auth header is required to have "unique" users
+- Basic game type "Guess 6" is implemented. No additional types, features are present
+- "Unit" tests are a mix of integration tests and unit tests and do interact with SQLite database
+
+* How to run
+
+- install the dependencies
+
+#+BEGIN_SRC sh
+npm install
+#+END_SRC
+
+- update local configuration file *.env*
+
+#+BEGIN_SRC sh
+cp .env.sample .env
+#+END_SRC
+
+- run the application locally
+
+#+BEGIN_SRC sh
+npm run local
+#+END_SRC
+
+- Access the Swagger UI via [[http://localhost:3000][http://localhost:3000]]
+- copy/paste the following to the textfield in the upper right corner
+
+#+BEGIN_SRC text
+Basic c29tZXVzZXI6c29tZXBhc3N3b3Jk
+#+END_SRC
+
+* Run the tests
+
+#+BEGIN_SRC sh
+npm run test
+#+END_SRC
+
+* Lint the code
+
+#+BEGIN_SRC sh
+npm run lint
+#+END_SRC
+
+* Documentation
+
+Documentation is available by starting the app first and then accessing it via:
+
+[[http://localhost:3000][http://localhost:3000]]
