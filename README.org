@@ -53,3 +53,38 @@ npm run lint
 Documentation is available by starting the app first and then accessing it via:
 
 [[http://localhost:3000][http://localhost:3000]]
+
+* Sample guess payload
+
+#+BEGIN_SRC json
+{
+  "guess": {
+    "entries": [
+      {
+        "id": "p7Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      },
+      {
+        "id": "27Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      },
+      {
+        "id": "37Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      },
+      {
+        "id": "47Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      },
+      {
+        "id": "57Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      },
+      {
+        "id": "67Mrn8Pjsyc0W2mSuiKWy",
+        "name": "Patrick Omalley"
+      }
+    ]
+  }
+}
+#+END_SRC

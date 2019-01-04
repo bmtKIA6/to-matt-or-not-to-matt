@@ -80,3 +80,6 @@ exports.plugin = {
     pkg: Self,
     register: internals.register,
 };
+
+exports.validateUser = internals.validateUser;
+exports.populateDB = internals.populateDB;
